@@ -1,0 +1,8 @@
+payroll company 	: Solvence Tech India 
+clint company 		: Prodapt solutions
+prod or servic 		: Prodapt is a service-based IT company
+notice peri 		: Serving notice period
+offl notice peri 	: 30 days
+why 30 days only 	: Due to my project was complete 
+last working date(LWD) 	: 
+pf 			: no
