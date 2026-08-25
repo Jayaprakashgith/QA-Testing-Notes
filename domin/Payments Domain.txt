@@ -1,0 +1,78 @@
+End to End Flow :
+When a corporates initiates transaction from the channels[like Web or mobile] MT101 message request will be generated and goes to the sender bank Bank A
+Here SB A will receive the message instruction through payments engine and will do the data validation [Prechecks like A/c v & AML screening]
+Once its done message will be converted in to either MT103 or MT202cov message
+If MT103 --> Payment process will be happen straightforward between the 2 banks whereas Bank A will transfer MT103 directly through the receiver bank and credits fund to the beneficiary account
+If MT202cov--> Transaction will takes place through the correspondent bank 
+
+MT202cov Workflow : used for fund settlement between banks
+-----------------
+An MT202 COV is a type of SWIFT message used in international banking.
+It ensures compliance with regulatory requirements by including details of the underlying customer payment, which helps with transparency and anti-money laundering efforts.
+
+Let us consider BANKA, BankB & BankC. Here "BankB is the correspondent Bank". 
+While a customer initiates a transaction through the channel, MT101 message request will be generated and will reach the Bank A.
+Here Bank A sends Announcement message via MT103 directly to the BankC which carrying the Customer Payment Details 
+Post that Bank A moves Actual fund MT202cov to the Correspondent bank B and Bank B will move forward to the Bene Bank C
+Here Bank C will recounciles both the MT103 & MT202cov using Field21[Related Reference] then fund will be credited to the Customer B's account
+Finally, The Customer A will receives the confirmation message via MT900  
+Key points:
+Prevent money laundering
+Ensure payment traceability
+          
+
+MT103 Serial :
+------------
+Method of sending MT103 message in a chaining process between multiple banks together is called the Serial method.
+Serial method is often expensive as each bank in the payment chain will add their charges
+It is also time-consuming
+
+SWIFT stands for Society for Worldwide Interbank Financial Telecommunication.
+It is a global messaging network that banks and financial institutions use to send secure information and instructions 
+— especially for international money transfers.
+
+KYC :
+KYC stands for Know Your Customer
+is a process used to verify and identify a bank's customers
+Verify who their customers are
+Monitor for suspicious activity
+It is the key to avoid AML
+
+Nastro : Our account with you
+NOSTRO account is nothing but a bank account that one bank holds in a foreign country, in the currency of that country, to make international payments easier
+So if Bank A (in the U.S.) holds money in Bank B (in the UK) in British Pounds (GBP), that account is Bank A’s NOSTRO with Bank B
+For E.g Bank A (in New York) wants to send money in euros.
+Bank A doesn’t use euros locally, so it holds a NOSTRO account with Bank B in Frankfurt, in EUR.
+When a customer in New York sends euros abroad, Bank A uses that NOSTRO account to settle the payment.
+Vostro : Your account with us
+------
+A VOSTRO account is similarly as a bank account that a foreign bank holds with our bank, typically in your local currency
+For eg,Bank B (in London) wants to make USD payments
+It opens a VOSTRO account in Bank A (New York) in USD
+This account holds Bank B’s USD funds inside the U.S. banking system
+When Bank B wants to pay someone in USD, it instructs Bank A to debit its VOSTRO account
+
+AML :
+It’s a set of rules and checks that banks and financial institutions use to stop criminals from hiding illegal money (called "laundering").
+They want to "clean" this money so it looks like it came from legal activities. AML rules stop them from doing that by watching how money moves between people, businesses, and countries.
+When someone sends money — especially internationally — banks must:
+Know who is sending the money (customer identity)
+Know who is receiving it
+Watch for anything suspicious
+Report it if something looks wrong
+The money goes to or comes from a risky country
+
+Charges:
+OUR: Sender pays all fees
+SHA: Sender and receiver share fees
+BEN: Receiver pays all fees
+
+
+
+
+
+
+
+
+
+

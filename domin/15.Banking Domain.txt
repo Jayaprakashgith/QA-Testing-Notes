@@ -1,0 +1,52 @@
+Banking Domain:
+---------------
+Core Banking, Corporate Banking, Personal Banking
+
+Modules:
+--------
+1.User Management Module:
+-------------------------
+Allows users to create accounts, log in, and manage their profiles.
+Stores user information, account settings, and preferences.
+Multi-Factor Authentication (MFA): multiple forms of verification.
+
+2.Account Management Module:
+----------------------------
+Provides a summary of all user accounts (e.g., savings, fixed, loans).
+Displays detailed records of past transactions.
+Generates and provides access to periodic account statements.
+
+3.Funds Transfer Module:
+------------------------
+Enables transfers between the user's own accounts.
+Facilitates transfers to other bank accounts, both within the same bank and to other banks.
+Allows users to set up recurring or future-dated transfers.
+
+4.Bill Payment Module:
+----------------------
+Manages a list of payees for bill payments.
+Allows users to schedule one-time or recurring bill payments.
+Displays a history of past bill payments.
+
+5.Card Management Module:
+-------------------------
+Allows users to activate or deactivate their debit/credit cards.
+Enables users to set spending limits and manage card settings.
+
+6.Loan Management Module:
+-------------------------
+Facilitates the process of applying for personal, auto, or home loans.
+Displays the repayment schedule and allows users to make payments.
+Provides updates on the status of loan applications and repayments.
+
+7.Customer Support Module:
+--------------------------
+Offers FAQs, guides, and support resources.
+Provides real-time chat support and secure messaging with customer service representatives.
+Allows users to submit and track support tickets.
+
+8.Alerts and Notifications Module:
+----------------------------------
+Sends notifications for important account activities (e.g., low balance, large transactions).
+Notifies users of suspicious activities and potential security threats.
+Sends reminders for upcoming payments, transfers, and other scheduled activities.

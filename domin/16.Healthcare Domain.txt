@@ -1,0 +1,163 @@
+Explanation For Interview
+==================================
+
+1-->Currently I'm into "Your project name"
+2-->They are into Insurance, Clinical Trial And Much more
+3-->I'm Into Clinical trial Module which means a device/ medicine will undergone Trail before into allopathy Field
+4-->Here we have Source application, we used to check the Flow from Source application to target Application basically It Comes Under Integration Testing
+5-->For Ex, In Source Application, we have Functionalities like Study ID, Study country ID and Study Site ID
+6-->Then we have like Patient name, age, issue Observed, description , drugs prescribed, Primary Monitor , Site Monitor , Status and Observations
+7-->It will generate Patient Log ID
+8-->We have to check the Data in Target Application with the help of Log ID and need to validate the Data flow From Source To target
+
+
+Sample Test cases
+======================
+
+TC 01 : creating issue with valid information
+
+Tc 02: creating issue with maximum length
+
+TC 03: creating issue with special charcters
+
+Tc 04: Creating and closing the issue
+
+Tc 05: Updating the issue with valid Information
+
+Tc 06: Updating the issue with Special characters
+
+TC 08: Updating the issue with Maximum length
+
+
+
+Domain Explanation
+====================
+
+A clinical trial is a scientific study conducted to evaluate the safety, efficacy, and effectiveness of a new medical intervention or treatment in human subjects. It is a crucial step in the development and approval process of new drugs, therapies, medical devices, and treatment protocols.
+
+Clinical trials are designed to answer specific research questions and gather evidence about the benefits and risks of the intervention being studied. These trials follow a predefined protocol, which outlines the study objectives, eligibility criteria for participants, treatment procedures, and data collection methods.
+
+The primary goals of clinical trials include:
+
+1. Assessing Safety: Clinical trials aim to determine the safety of a new intervention, such as a drug, medical device, or treatment method. Researchers closely monitor participants for any adverse effects or side effects and evaluate the intervention's safety profile.
+
+2. Evaluating Efficacy: Clinical trials assess the effectiveness of the intervention in achieving the desired outcomes or treatment goals. Researchers analyze the data collected during the trial to determine if the intervention provides the intended benefits.
+
+3. Comparing Treatments: Some clinical trials involve comparing the new intervention to existing treatments or standard care. These trials help determine if the new intervention is more effective, safer, or offers additional benefits compared to the current options.
+
+4. Gathering Data: Clinical trials collect valuable data on the intervention's effects, dosage, administration methods, and optimal patient populations. This data contributes to scientific knowledge and helps guide future medical practices and treatment guidelines.
+
+Clinical trials typically follow a standardized set of phases:
+
+1. Phase 0: Exploratory Phase: This phase involves a small number of participants and aims to gather initial data on how the intervention interacts with the body.
+
+2. Phase 1: Safety Assessment: The intervention is tested on a small group of healthy volunteers to evaluate its safety, dosage range, and identify any side effects or adverse reactions.
+
+3. Phase 2: Efficacy Evaluation: The intervention is administered to a larger group of participants, typically individuals with the targeted condition or disease. This phase assesses the intervention's effectiveness and further evaluates its safety.
+
+4. Phase 3: Large-Scale Testing: The intervention is tested on a larger population to gather more robust data on its effectiveness, safety, and potential side effects. This phase compares the intervention to existing treatments or placebos.
+
+5. Phase 4: Post-Market Surveillance: After the intervention is approved and made available for public use, post-market surveillance studies may be conducted to monitor its long-term effects and gather additional data on its safety and efficacy.
+
+Clinical trials are governed by strict ethical and regulatory guidelines to ensure participant safety and data integrity. The results of clinical trials play a critical role in the decision-making process of regulatory authorities, healthcare providers, and patients when considering the adoption or use of a new medical intervention.
+
+ Integration:
+
+
+
+ 
+Source Application(A)                                                                                                        Target application(B)
+                                                                      DB
+STudy:123456
+STudy Country : India
+Study site: chennai, SIMS Hospital
+
+
+Name: Akkash Kumar (20)                                                                                                        Subject Name:AkkAsh Kumar
+Age:273456789 
+Gender: M
+Issue: fever + cough                                                                                                            Disesase:fever + cough
+Issue Description: high fever
+
+Date Of issue: 12-05-2023
+
+Drugs : Dolo$544
+
+Dosage: 1300 mg per day
+
+Action/updates:
+1.
+2.
+3.
+4.
+
+Primary Monitor: DR.sharma
+
+Site Monitor : DR.ARun
+
+Status: Closed                                                                                                                 Live
+
+
+Log Id:3456789
+
+
+TC 01 : creating issue with valid information
+
+Tc 02: creating issue with maximum length
+
+TC 03: creating issue with special charcters
+
+Tc 04: Creating and closing the issue
+
+Tc 05: Updating the issue with valid Information
+
+Tc 06: Updating the issue with Special characters
+
+TC 08: Updating the issue with Maximum length
+
+
+
+Project Explanation
+=====================
+
+1-->Currently I'm into "Your project name"
+2-->They are into Insurance, Clinical Trial And Much more
+3-->I'm Into Clinical trial Module which means a device/ medicine will undergone Trail before into allopathy Field
+4-->Here we have Source application, we used to check the Flow from Source application to target Application basically It Comes Under Integration Testing
+5-->For Ex, In Source Application, we have Functionalities like Study ID, Study country ID and Study Site ID
+6-->Then we have like Patient name, age, issue Observed, description , drugs prescribed, Primary Monitor , Site Monitor , Status and Observations
+7-->It will generate Patient Log ID
+8-->We have to check the Data in Target Application with the help of Log ID and need to validate the Data flow From Source To target
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
