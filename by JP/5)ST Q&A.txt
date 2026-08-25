@@ -1,0 +1,643 @@
+
+
+=============================================================================================================================================================
+	🔹 Core Manual Testing
+
+1. Can you explain the difference between Smoke testing and Sanity testing? When would you use each?
+   Answer: 
+	→ Smoke Testing is done after getting a new build "to check if the main and basic features "of the application are working fine.It helps to make sure the build is stable for further testing.
+
+	→ Sanity Testing is done during the release phase to check the main functionalities of the application without going deeper.
+
+*************
+2. Walk me through the Software Testing Life Cycle (STLC) you followed in your project.
+   Answer: 
+
+→ Requirement Analysis 
+	* In this phase, we study the requirements (like SRS or BRD) to understand what needs to be tested.
+	* We identify testable requirements and clarify any doubts with the Business Analyst or Developer.
+
+→ Test Planning
+	* Here, the Test Lead prepares the Test Plan which defines the scope, objectives, resources, tools, schedule, and risk management.
+	* It also defines entry and exit criteria for testing.
+
+→ Test Case Design 
+	* In this phase, we prepare test cases, test data, and test scripts based on the requirements.
+	* We cover both positive and negative test scenarios to ensure full coverage.
+
+→ Test Execution 
+	* We execute the prepared test cases in the test environment and record the results as Pass or Fail.
+	* If any test fails, we log the defect in a defect tracking tool like Jira.
+
+→ Defect Reporting 
+	* When a defect is found, we report it to the developer with proper details — steps to reproduce, severity, screenshots, etc.
+	* We then retest once the issue is fixed and close it after verification.
+
+→ Test Closure.
+	* After all testing activities are done, we prepare a Test Summary Report and conduct a closure meeting.
+	* We discuss what went well, what needs improvement, and lessons learned for future projects.
+
+**********
+3. How do you prioritize test cases when time is limited?
+   Answer: 
+	Prioritize based on criticality, business impact, and risk, focusing on high-priority test cases first.
+
+*************
+4. What do you do when you find a defect that developers mark as “Not a bug,” but you’re confident it is?
+   Answer: 
+	Provide evidence like screenshots, logs, and steps to reproduce.  
+	Then discuss with the developer and QA lead for clarification.
+
+************
+5. Can you explain positive vs negative test cases with an example from your e-commerce project?
+   Answer: 
+	→ Positive test case: Enter valid login credentials to ensure login succeeds. 
+	→ Negative test case: Enter invalid credentials and verify login fails with proper error message.
+
+----
+Q1. What is the difference between Verification and Validation? (Also in Another Notepad) 
+   Answer: 
+	→ Verification ensures the product is built correctly (process-oriented). 
+	→ Validation ensures the right product is built (product-oriented).
+
+************
+Q2. What is a Test Plan and what does it contain?
+   Answer: 
+	A Test Plan outlines the testing strategy, scope, objectives, resources, schedule, test environment, and deliverables.
+
+************
+Q3. What is the difference between Severity and Priority?(Also)
+   Answer: 
+	→ Severity measures the impact of a defect. 
+	→ Priority indicates the order in which it should be fixed.
+
+************
+Q4. What is Regression Testing and when do you perform it?
+   Answer: 
+	→ Regression Testing ensures new changes do not break existing functionality. 
+	→ Performed after bug fixes or new feature implementation.
+
+************
+Q5. What are boundary value and equivalence partitioning?
+   Answer: 
+	Boundary value testing checks values at boundaries. Equivalence partitioning divides input data into valid/invalid groups for testing.
+
+-----
+Q1. What is a Test Case and what are its components?
+   Answer: 
+	A Test Case is a set of conditions to test functionality. 
+  		Components: Test Case ID, Description, Preconditions, Test Steps, Expected Result, Actual Result, Status.
+
+************
+Q2. What is the difference between Test Scenario and Test Case?
+   Answer: 
+	→ Test Scenario is a high-level functionality to test.
+	→ Test Case is a detailed step-by-step test of that functionality.
+
+************
+Q3. What is RTM ?
+   Answer: 
+	→ RTM stands for Requirement Traceability Matrix
+	→ It is a document that ensures that all requirements are covered by test cases.
+
+************
+Q4. What is Ad-hoc Testing?
+   Answer:
+	Ad-hoc testing is an informal testing approach where we try to find defects without following any formal test cases.
+
+************
+Q5. What is the difference between Functional and Non-functional testing?
+   Answer: 
+	→ Functional testing checks system functions. 
+	→ Non-functional testing checks performance, usability, reliability, etc.
+
+	Functional is about ‘what the system does’,
+	Non-functional is about ‘how the system behaves under various conditions’.
+
+----
+Q1. What’s the difference between Regression and Retesting?
+   Answer: 
+	→ Regression ensures unchanged parts of the application work after updates. 
+	→ Retesting tests a specific defect after it has been fixed.
+
+************
+Q3. How do you decide which test cases to automate?
+   Answer: 
+	Automate repetitive, high-risk, time-consuming, and stable test cases.
+
+************
+Q4. What are entry and exit criteria in testing?
+   Answer: 
+	→ Entry criteria define prerequisites to start testing.
+	→ Exit criteria define conditions to stop testing.
+
+************
+Q5. What metrics do you track during testing?
+   Answer: 
+	Test case execution, defect density, defect leakage, test coverage, and pass/fail rates.
+
+=============================================================================================================================================================
+	🔹 Automation Testing (Selenium + Java)
+
+1. Can you explain the difference between findElement and findElements in Selenium?
+   Answer: 
+	→ FindElement returns a single element 
+	→ FindElements returns a list of elements.
+
+************
+2. How did you implement Page Object Model (POM) in your project?
+   Answer: 
+	Created separate classes for each page with web elements and methods, and called them in test scripts.
+
+************
+3. What is the difference between @BeforeTest and @BeforeMethod in TestNG?
+   Answer: 
+	→ @BeforeTest runs once before all test methods in a <test> tag. 
+	→ @BeforeMethod runs before each test method.
+
+************
+4. How do you handle dynamic XPath in your application?
+   Answer:
+	 Use contains(), starts-with(), or ends-with() functions to locate dynamic elements.
+
+************
+5. Can you explain how Cucumber BDD works in your framework?
+   Answer: 
+	Feature file defines behavior → Step definition maps steps to code → Runner class executes scenarios.
+
+----
+Q1. Difference between Implicit, Explicit, and Fluent Wait in Selenium?
+    Answer: 
+	→ Implicit Wait waits globally, 
+	→ Explicit Wait waits for specific conditions, 
+	→ Fluent Wait waits with polling frequency and ignoring exceptions.
+
+************
+Q2. How do you handle alerts, frames, and windows in Selenium?
+    Answer: 
+	→ Alerts: switchTo().alert().accept()/dismiss(). 
+	→ Frames: switchTo().frame(). 
+	→ Windows: switchTo().window().
+
+************
+Q3. What are hooks in Cucumber?
+    Answer: 
+	Hooks (@Before, @After) execute before or after scenarios for setup/teardown.
+
+************
+Q4. What is the difference between Maven clean, validate, install, and test?
+    Answer: 
+	→ clean removes target folder,
+	→ validate checks project,
+	→ install adds artifacts to local repo, 
+	→ test runs tests.
+
+************
+Q5. How do you integrate Selenium tests with Jenkins?
+    Answer: 
+	Create a Jenkins job, configure SCM, build triggers, and execute Selenium tests via Maven or Gradle.
+
+----
+Q1. What are advantages of using Selenium WebDriver?
+    Answer: 
+	Supports multiple browsers, languages, and platforms; open-source; supports automation of web applications.
+
+************
+Q2. What is the difference between Absolute XPath and Relative XPath?
+    Answer: 
+	→ Absolute XPath starts from root (/html), 
+	→ Relative XPath starts from any node (//tag).
+
+************
+Q3. How do you handle synchronization issues in Selenium?
+    Answer: 
+	Use waits (Implicit, Explicit, Fluent) to handle dynamic elements.
+
+************
+Q4. What is the difference between Data-Driven and Keyword-Driven Framework?
+    Answer: 
+	→ Data-Driven uses external data for test input; 
+	→ Keyword-Driven uses keywords to represent actions.
+
+************
+Q5. What are Annotations in TestNG?
+    Answer: 
+	Special instructions (@Test, @BeforeMethod, @AfterMethod, etc.) for test execution control.
+
+----
+Q1. Can you explain your automation framework architecture?
+    Answer: 
+	Consists of Page Objects, Test Scripts, Test Data, Utilities, Configuration files, and Test Runner.
+
+************
+Q3. How do you handle synchronization issues in Selenium?
+    Answer: 
+	Apply waits or JavaScript executor to ensure elements are ready.
+
+************
+Q4. How do you manage test execution in Jenkins?
+    Answer: 
+	Configure jobs, schedules, post-build actions, and reports.
+
+************
+Q5. How do you handle failed test cases in automation?
+    Answer: 
+	Capture screenshots, log errors, retry failed tests, and report in dashboards.
+
+----
+1. What are different types of locators in Selenium?
+   Answer:
+	Selenium provides 8 types of locators to find elements on a web page:
+		→ id,name,className,tagName,linkText,partialLinkText,cssSelector,xpath
+
+************
+2. When do you use XPath over CSS locators?
+   Answer:
+	→ Use XPath when you need to navigate through complex hierarchies or handle dynamic elements.
+	→ XPath supports both forward and backward traversal, while CSS does not.
+	→ CSS is faster and preferred for simple attributes, but XPath is more powerful for conditions and parent-child relations.
+
+************
+3. How to get a specific value from a dropdown and reuse it in verifications?
+  Answer:
+	Use the Select class in Selenium
+
+************
+4. When do we use JavaScript Executors?
+   Answer:
+	We use JavaScriptExecutor when Selenium methods fail to interact with certain elements like hidden fields, dynamic elements, or for scrolling actions.
+Common uses:
+	→ Click hidden elements
+	→ Scroll the page
+	→ Fetch browser details
+	→ Highlight elements
+
+************
+5. Is it possible to validate CAPTCHA using Selenium? If yes, how?
+   Answer: 
+	Selenium alone cannot automate CAPTCHA since it’s meant to prevent automation.
+Workarounds:
+	→ Bypass CAPTCHA in the test environment.
+	→ Use mock data or disable CAPTCHA for automation users.
+	→ Use third-party APIs (like 2Captcha or OCR tools) — but this is not recommended for real testing due to security and ethics.
+
+************
+6. What should be the ideal way to store data using Selenium WebDriver only?
+   Answer:
+	Selenium WebDriver alone does not store data, but for temporary storage:
+		→ Use variables or HashMap in code for runtime data.
+		→ For larger data, integrate with Excel, CSV, or Database using libraries like Apache POI or JDBC.
+		→ Use Property files for configuration data.
+
+************
+7. Is it possible to use XPath like parent/child/node? If yes, provide an example.
+   Answer:
+	Yes. XPath supports navigation through parent/child/sibling relationships.
+Example:
+	→ // Child node
+//div[@class='container']/child::input[1]
+
+	→ // Parent node
+//input[@id='email']/parent::div
+
+	→ // Following sibling
+//label[text()='Username']/following-sibling::input
+
+************
+8. What happens if you receive browser notifications during test automation execution?
+  Answer:
+	→ Browser notifications can interrupt automation.
+Solutions:
+	ChromeOptions or FirefoxProfile can disable notifications.
+
+Example:
+	ChromeOptions options = new ChromeOptions();
+	options.addArguments("--disable-notifications");
+	WebDriver driver = new ChromeDriver(options);
+
+************
+9. Why does Stale Element Exception occur, and how to handle it?
+ Answer:
+	Reason: The element was found earlier but the page was refreshed or DOM changed before interaction.
+
+Solution:
+	→ Re-locate the element before performing the action.
+	→ Use WebDriverWait to wait until the element is stable.
+
+************
+10. What is Invalid Certificate Exception?
+   Answer:
+	Occurs when the website has an SSL certificate issue and the browser blocks access.
+Solution:
+	→ Use DesiredCapabilities or Options to accept insecure certificates.
+
+Example:
+	ChromeOptions options = new ChromeOptions();
+	options.setAcceptInsecureCerts(true);
+	WebDriver driver = new ChromeDriver(options);
+
+=============================================================================================================================================================
+	🔹 API Testing
+
+1.Api Response Time ? 
+	--> 200 MS
+
+************
+1. What’s the difference between GET, POST, PUT, PATCH, and DELETE APIs?
+   Answer: 
+	GET 	→ retrieves data, 
+	POST 	→ creates, 
+	PUT 	→ updates full resource,
+	PATCH 	→ updates partial resource, 
+	DELETE 	→ removes resource.
+
+************
+2. How do you validate JSON schema in Rest Assured?
+   Answer: 
+	Use .then().assertThat().body(matchesJsonSchemaInClasspath("schema.json"))
+
+************
+3. What is the difference between status code 200, 201, and 204?
+   Answer: 
+	200 → OK,
+	201 → Created, 
+	204 → No Content.
+
+************
+4. How do you pass headers and query parameters in Rest Assured?
+   Answer: 
+	Using .header(), .headers(), .queryParam(), .queryParams().
+
+************
+5. Suppose a payment API fails intermittently, how would you debug and report it?
+   Answer: 
+	Check logs, reproduce scenario, validate payload, test environment, and report with evidence.
+
+----
+Q1. How do you validate response time in Rest Assured?
+    Answer: 
+	Use .time() to assert response time within limits.
+
+************
+Q2. What’s the difference between PUT and PATCH?
+    Answer: 
+	PUT 	→ updates entire resource, 
+	PATCH 	→ updates partial resource.
+
+************
+Q3. How do you test authentication in APIs?
+    Answer: 
+	Pass auth tokens, API keys, or credentials and validate responses.
+
+----
+Q1. Let’s say you test an API and get a 500 Internal Server Error. What steps will you take to debug this?
+    Answer: 
+	Check server logs, input data, environment, and contact backend if needed.
+
+----
+Q1. What’s the difference between SOAP and REST APIs?
+    Answer: 
+	→ SOAP is protocol-based with XML, 
+	→ REST is architectural style using HTTP and JSON/XML.
+
+************
+Q2. How do you validate response headers in Postman?
+    Answer: 
+	Use tests scripts: pm.response.headers.get('Header-Name')
+
+************
+Q3. How do you pass path and query parameters in Rest Assured?
+    Answer: 
+	Path: .pathParam(); 
+	Query: .queryParam()
+
+************
+Q4. How do you test negative scenarios in API testing?
+    Answer: 
+	Send invalid input, missing parameters, unauthorized access, etc.
+
+************
+Q5. Difference between 401 and 403?
+    Answer: 
+	401 Unauthorized (authentication failed), 
+	403 Forbidden (authenticated but no permission).
+
+-----
+Q1. What validations do you perform during API testing?
+    Answer: 
+	Response code, schema, headers, data correctness, performance, security.
+
+************
+Q2. How do you validate JSON schema in Rest Assured?
+    Answer: 
+	Using matchesJsonSchemaInClasspath() method.
+
+************
+Q4. How do you pass authentication tokens in API requests?
+    Answer: 
+	Using headers (.header("Authorization", "Bearer token")) or query parameters.
+
+=============================================================================================================================================================
+	🔹 SQL / Backend
+
+1. Write an SQL query to fetch the top 5 highest-priced products from a table Products.
+   Answer: 
+	SELECT * FROM Products ORDER BY Price DESC LIMIT 5;
+
+************
+2. How would you validate order details between UI and database?
+   Answer: 
+	Compare UI displayed data with database query results for accuracy.
+
+************
+3. Difference between INNER JOIN and LEFT JOIN.
+   Answer: 
+	→ INNER JOIN returns matching rows; 
+	→ LEFT JOIN returns all left table rows with matched right rows or NULL.
+
+************
+4. If duplicate records exist, how do you fetch only unique values?
+   Answer: 
+	Use SELECT DISTINCT column_name FROM table;
+
+************
+5. How do you check if a column has NULL values?
+   Answer:
+	SELECT * FROM table WHERE column_name IS NULL;
+
+----
+Q1. Query to find duplicate records in a table?
+    Answer: 
+	SELECT column_name, COUNT(*) FROM table GROUP BY column_name HAVING COUNT(*) > 1;
+
+************
+Q2. Query to get orders placed in the last 7 days?
+    Answer: 
+	SELECT * FROM Orders WHERE OrderDate >= NOW() - INTERVAL 7 DAY;
+
+-----
+Q1. How to find the 3rd highest salary in a table?
+    Answer:
+	 SELECT DISTINCT Salary FROM Employees ORDER BY Salary DESC LIMIT 1 OFFSET 2;
+
+************
+Q2. How do you join three tables?
+    Answer: 
+	SELECT * FROM A INNER JOIN B ON A.id = B.id INNER JOIN C ON B.id = C.id;
+
+************
+Q3. What is the difference between WHERE and HAVING?
+    Answer: 
+	WHERE filters rows before aggregation; HAVING filters groups after aggregation.
+
+------
+Q1. How do you validate UI data with the database?
+    Answer: 
+	Extract data from UI and DB, then compare for consistency.
+
+************
+Q2. Query to find the total number of orders per customer?
+    Answer: 
+	SELECT CustomerID, COUNT(*) AS TotalOrders FROM Orders GROUP BY CustomerID;
+
+----
+Q1. How do you validate backend data?
+   A:
+	 By executing SQL queries on MySQL and SQL Server to cross-check UI values and API responses, ensuring data consistency and accuracy.
+
+************
+Q2. Give an example of a query you wrote.
+   A: 
+	To validate order totals:
+		SELECT order_id, total_amount FROM orders WHERE order_id = '12345';
+
+=============================================================================================================================================================
+	🔹 Agile & Process
+
+1. Can you explain your role in daily stand-ups and sprint planning?
+   Answer:
+	Provide status updates, discuss blockers, plan tasks for the sprint.
+
+************
+2. How do you estimate the effort for test cases in Agile?
+   Answer: 
+	Based on complexity, risk, and previous experience using story points or hours.
+
+************
+3. What is the difference between user story and epic?
+   Answer: 
+	User story is a small, implementable feature; Epic is a large body of work broken into multiple stories.
+
+************
+4. How do you report defects in JIRA?
+   Answer: 
+	Create defect with summary, description, steps, severity, priority, attachments, and assign.
+
+************
+5. If the sprint ends and some test cases remain incomplete, how do you handle it?
+   Answer: 
+	Move them to the next sprint backlog and report to the team.
+
+----
+Q1. What is your role in Defect Lifecycle?
+    Answer: 
+	Raise, track, verify, and close defects.
+
+************
+Q2. What’s the difference between Sprint Review and Sprint Retrospective?
+    Answer: 
+	→ Sprint Review		: Demonstrate completed work. 
+	→ Sprint Retrospective	: Discuss improvements for next sprint.
+
+-----
+Q1. Difference between Agile and Waterfall model?
+    Answer: 
+	→ Agile is iterative and flexible; 
+	→ Waterfall is sequential and rigid.
+
+************
+Q2. What happens in Sprint Grooming/Refinement?
+    Answer: 
+	Review backlog, refine user stories, estimate effort, and prioritize tasks.
+
+************
+Q3. How do you handle incomplete stories in a sprint?
+    Answer: 
+	Re-prioritize in backlog and plan in next sprint.
+
+----
+Q2. How do you estimate QA effort in a sprint?
+    Answer: 
+	Based on test complexity, number of test cases, and resource availability.
+
+************
+Q3. How do you handle last-minute requirement changes?
+    Answer: 
+	Reassess impact, update test cases, and communicate with team.
+
+=============================================================================================================================================================
+	🔹 Scenario-Based (E-Commerce Domain)
+
+1. If the search functionality returns incorrect results, how will you approach testing?
+   Answer: 
+	Check search logic, test with different inputs, verify indexing and filters, report defects.
+
+************
+2. How do you test a payment flow that integrates with third-party systems?
+   Answer: 
+	Test with valid/invalid cards, network failures, third-party responses, and error handling.
+
+************
+3. What are the critical test cases for “Add to Cart” functionality?
+   Answer: 
+	Adding items, updating quantity, removing items, stock validation, price calculation.
+
+************
+4. Suppose a customer places an order, but loyalty points are not updated—how would you debug this?
+   Answer:
+	Verify backend calculations, API responses, database entries, and trigger conditions.
+
+************
+5. How would you perform end-to-end testing for login → browse → payment → order confirmation?
+   Answer: 
+	Create test cases covering each step, execute sequentially, validate database and UI.
+
+----
+Q1. How would you test the Payment Gateway?
+    Answer: 
+	Positive and negative scenarios, transaction success/failure, security checks, refunds.
+
+************
+Q2. How would you test a product search feature?
+    Answer: 
+	Verify search results accuracy, filters, pagination, typo handling.
+
+------
+Q1. How would you test “Apply Coupon Code” functionality?
+    Answer: 
+	Test valid, expired, minimum order, maximum discount, and invalid codes.
+
+************
+Q2. What test cases will you write for “Order Cancellation”?
+    Answer: 
+	Cancel before/after payment, partial items, refund processing, notification validation.
+
+************
+Q3. If order confirmation email is not received by customer, how will you debug?
+    Answer: 
+	Check email server, template configuration, API call, and customer email correctness.
+
+----
+Q1. What are the major test cases for the Checkout process?
+	Answer: Billing/shipping validation, payment options, order summary, taxes, promo codes.
+
+************
+Q2. A user reports “Payment succeeded but order not visible.” What will you do?
+	Answer: Check backend transaction logs, database entries, UI refresh, and reconcile data.
+
+************
+Q3. What are the important negative scenarios for login?
+	Answer: Invalid username/password, blank fields, SQL injection, account lock, session expiry.
+
+
+==============================================================================================================================================================

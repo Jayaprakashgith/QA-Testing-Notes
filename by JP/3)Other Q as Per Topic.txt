@@ -1,0 +1,269 @@
+====================================================================================================================================================================
+							BASIC AUTOMATION
+
+`)What Automation Testing?
+Ans :
+    Automation Testing is a software testing method that uses specialized tools or scripts to automatically execute test cases—without human intervention.
+@Common Tools:
+   *Selenium (for web apps)
+   *JUnit/TestNG (Java-based frameworks)
+   *Appium (for mobile apps)
+   *Postman (for API testing)
+
+====
+`)Advantages of automation testing
+Ans:
+    * Faster Test excusion 
+    * Expands coverage for different browsers, devices, and data 
+    * Reduced Human Error 
+    * Cost Cost-effectiveness
+
+====
+`)What are the differences between CSS selectors and XPath?
+Ans:
+     Both are used to find the locator of the elements 
+	> where using css Selector we can find locators in forward direction only, 
+	> but using xpath we can find in both forward direction and backward direction  
+
+====
+`) Absolute xpath & Relative xpath ?
+Ans:
+    * Absolute xpath
+      --------------
+       Starts from the root node and traverses down to desired element  
+Ex:
+---     
+  /html/body/div/div/div/div/div/div/div[2]/div/div/form/div/div/input
+-+
+  * Relative xpath
+    -------------
+        Start from the current node and search for the desired element
+
+----
+`)Login functionality?
+Ans:
+	Like TestCases (Senerio Outline)
+
+---
+`) How to You launch Mobile Application?
+Ans:
+    * we will add Java Clint Dep in Pom.XML
+    * We need to check the desired Capabilities 
+        1) DeviceName 
+        2) PlatformName 
+        3) PlatformVersion
+        4) AppPackage 
+        5) AppName
+
+----
+`) how will you test a application without requrement document ?
+Ans:
+	Exploratory Testing
+	        Exploratory Testing is a software testing approach where testers simultaneously learn about the application, design test cases, and execute them without following a pre-defined set of test cases.
+===
+Another Ans:
+	"If an application comes without documentation, I would first explore it to understand available features. I’ll use exploratory testing techniques, applying domain knowledge, boundary values, and error guessing to identify issues. I’ll focus on critical areas like login, navigation, and data flows. While testing, I’ll maintain notes or a mind map to ensure coverage and traceability. I’ll also interact with developers or business stakeholders to clarify expected behavior. This way, even without formal documents, I can effectively test and ensure quality."
+
+
+===============================================================================================================================================================
+							JAVA 
+
+`)What is a Try Catch and how do you use it?
+Ans:
+  	A try-catch block is a concept used to handle exceptions—unexpected errors that might occur during program execution
+
+---
+`)What is list ?
+Ans:  
+     	• Index Based One. 
+     	• Allows Duplicate. 
+
+---
+`)Set And Map?
+Ans:
+    --->A Set in Java is a collection of unique elements, meaning that it does not allow duplicate values.
+  	
+	Types:
+     		1)LinkedHashSet 2)HashSet 3)TreeSet
+
+    --->A Map in Java is a collection of key-value pairs, where each key is unique and maps to a specific value.
+    			*Each key is unique
+    			*Values can be duplicated
+    			*Used to associate one thing (key) with another (value)
+ 	Types:
+    		1)LinkedHashMap 2)HashMap 3)TreeMap
+
+----
+`)Difference between HashTable & HashMap?
+Ans :
+	1. 🔓 HashMap is not synchronized, so it’s faster but not thread-safe.
+ 	   🔐 Hashtable is synchronized, making it thread-safe but slower.
+
+	2. HashMap allows null keys and values; Hashtable doesn’t.
+
+	3. Hashtable is legacy; HashMap is part of the modern Collections Framework.
+
+----
+`)Implicity and explicity wait
+Ans:
+   	*Implicit wait sets a default timeout for all elements, making Selenium wait before throwing NoSuchElementException. 
+   	 	--> driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+	*Explicit wait targets specific elements or conditions, waiting until they're ready (like clickable or visible).
+		1. WebDriver Wait --> WebElement wRefName = driver.findElement(By.id(--));
+					 WebDriverWait waitRef = new WebDriverWait(driver, Duration.ofSeconds(20));
+					               waitRef.until(ExpectedConditions.visibilityOf(wRefName));
+		2. Fluent Wait    --> Wait<WebDriver> wait = new FluentWait<>(driver)
+							     .withTimeout(Duration.ofSeconds(30))               // Maximum wait time
+    							     .pollingEvery(Duration.ofSeconds(5))               // Check every 5 seconds
+    							     .ignoring(NoSuchElementException.class);
+
+----
+============================================================================================================================================================
+							FRAMEWORK
+
+)how do you choose framework for your project?
+Ans:
+  	* Project Requirements
+  	* Team Expertise
+	* Community & Support
+	* Scalability & Flexibility
+  	* Testing & Tooling Support
+  	* Performance & Security
+---
+`)Full form of TestNG
+Ans:
+   	* The full form of TestNG is Test Next Generation.
+   	* It's a testing framework inspired by JUnit but designed to cover more test categories—like unit, functional, integration, and end-to-end testing.
+	* It's especially popular in Java-based automation, offering features like parallel test execution, grouping, data-driven testing, and detailed reports.
+ 
+---
+`)Purposes of JUnit?
+Ans:
+  	* Write And Run Tests 
+  	* Catch Bugs And Errors
+  	* Improve Code Quality
+  	* Facilitate Refactoring - Dev can Refactor.They code with conf Knowing that changes won't break execting functions 
+
+---
+`)Advantages of TestNG over JUnit
+Ans:
+	1. More features & Annotations 
+	2. Supports test grouping,dependency testing, And Parallel Testing
+	3. Better Suited for Complex Testing Scenarios
+	4. More Flexible Test Configuration
+(OR)
+    	1. Parallel execution of tests to save time
+	2. Set of Annotstions 
+	3. Data Provider  
+	4. Test Grouping 
+	5. Different Form of Reporting
+
+==================================================================================================================================================================
+	
+					SELENIUM
+
+`)Passing multiple values into a single field, function, or test case
+Ans:
+	1. Use DataProviders (In TestNg)
+	2. Parameterized Tests (in JUnit)
+
+----
+`)How to pass Data from Excel to selenium?
+Ans :
+	1. Add Apache POI to Your Project
+	2. Read Data from Excel --> Use XSSFWorkbook for .xlsx files and HSSFWorkbook for .xls
+	3. Use @DataProvider in TestNG to feed test data From Excel.
+
+----
+`)Implicity and explicity wait
+Ans:
+   	*Implicit wait sets a default timeout for all elements, making Selenium wait before throwing NoSuchElementException. 
+   	 	--> driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+	*Explicit wait targets specific elements or conditions, waiting until they're ready (like clickable or visible).
+		1. WebDriver Wait --> WebElement wRefName = driver.findElement(By.id(--));
+					 WebDriverWait waitRef = new WebDriverWait(driver, Duration.ofSeconds(20));
+					               waitRef.until(ExpectedConditions.visibilityOf(wRefName));
+		2. Fluent Wait    --> Wait<WebDriver> wait = new FluentWait<>(driver)
+							     .withTimeout(Duration.ofSeconds(30))               // Maximum wait time
+    							     .pollingEvery(Duration.ofSeconds(5))               // Check every 5 seconds
+    							     .ignoring(NoSuchElementException.class);
+----
+`)What are the locators in selenium?
+Ans:
+ 	*byId
+ 	*byName
+ 	*byTagname
+ 	*byXpath
+ 	*byCssSelector
+
+----
+`)what is an xpath?
+Ans:
+  	* XPath is a query language used to navigate and locate elements in an XML or HTML document.
+	* It is Used to find the locators in the Webpage 
+----
+`)Set And Map?
+Ans:
+    --->A Set in Java is a collection of unique elements, meaning that it does not allow duplicate values.
+  	
+	Types:
+     		1)LinkedHashSet 2)HashSet 3)TreeSet
+
+    --->A Map in Java is a collection of key-value pairs, where each key is unique and maps to a specific value.
+    			*Each key is unique
+    			*Values can be duplicated
+    			*Used to associate one thing (key) with another (value)
+ 	Types:
+    		1)LinkedHashMap 2)HashMap 3)TreeMap
+
+----
+`)Find Element And Find Elements?
+Ans:
+    	findElement  : A single WebElement
+    	findElements : A List<WebElement>
+
+----
+`)What is a Try Catch and how do you use it?
+Ans:
+  	A try-catch block is a fundamental concept used to handle exceptions—unexpected errors that might occur during program execution
+
+----
+`) how do you Handling Alart AND Frames 
+Ans:
+	Alart
+       -------
+           Alert ref = driver.switchTo().alert();
+                 ref.accept();
+	
+	Frame
+       -------
+	    driver.switchTo().frame("FrameName or ID");   
+
+----
+`)What is list ?
+Ans:  
+     	• Index Based One. 
+     	• Allows Duplicate. 
+
+----
+`)How to interact with DropDown?
+Ans:
+	WebElement dropdownRef = driver.findElement(By.id("dropdownId"));
+			>
+	Select selectRef = new Select(dropdownRef);
+			>
+	selectRef.selectByVisibleText("Option Text"); (Or) selectRef.selectByIndex(1); (Or) selectRef.selectByValue("value");
+
+-----
+`)Difference between HashTable & HashMap?
+Ans :
+	1. 🔓 HashMap is not synchronized, so it’s faster but not thread-safe.
+ 	   🔐 Hashtable is synchronized, making it thread-safe but slower.
+
+	2. HashMap allows null keys and values; Hashtable doesn’t.
+
+	3. Hashtable is legacy; HashMap is part of the modern Collections Framework.
+
+================================================================================================================================================================
