@@ -1,0 +1,103 @@
+STLC:
+-----
+--> Software Testing Life Cycle (STLC) is defined as a sequence of activities conducted to perform Software Testing.
+
+Phases of STLC:
+---------------
+
+1.Requirement Analysis
+2.Test Planning
+3.Test Design
+
+4.Test execution
+5.Sign Off
+
+--> Each of these phases have a definite Entry and Exit criteria.
+
+ Entry Criteria(Input):
+ ----------------------
+Entry Criteria gives the prerequisite items need to start a phase.
+
+ Exit Criteria(Output): 
+ ----------------------
+Exit Criteria defines the items that must be concluded when a phase is completed.
+
+
+1.Requirement Analysis:
+ -----------------------
+Entry Criteria: BR Document and Design Specification Document
+
+--> We need to Understand the requirements
+--> If we have any doubts means mark it in query logs
+--> Clarification of doubts will be done in walkthrough session by BA
+--> Identify types of tests to be performed
+--> Get application access
+
+Exit Criteria: Finalized scope.
+
+ 2.Test Planning: 
+  ----------------
+Entry Criteria: Finalized scope
+
+--> Done by testing team lead
+--> Preparation of test plan document which includes
+--> Inscope and Outscope
+--> Types of Testing and its uses
+--> Test tool selection 
+--> Date Calculation
+--> Resource planning
+
+Exit Criteria: Test Plan Document.
+
+3.Test Design:
+--------------
+Entry Criteria: Test Plan Document
+
+--> Create test case document with test scenario, test case and test data
+--> Review test cases with peer or lead
+--> RTM(Requiremnet Tracability Matrix) will be done by Testing Team Lead
+--> Get Approval from BA
+--> Automation testers will do skeleton script
+
+Exit Criteria: Test Case Document.
+
+4.Test Execution:
+-----------------
+Entry Criteria: Test Case Document
+
+--> Execute tests as per plan
+--> Raise defects and Track the defects to closure
+--> Document test results
+
+Exit Criteria: Execution  Result.
+
+5.Sign Off:
+-----------
+Entry Criteria: Execution  Result
+
+--> Will be done by Testing Team Manager
+--> Test result analysis
+--> Evaluate cycle completion
+--> Prepare Test closure report.
+
+Exit Criteria: Closure Document.
+-------------------------------------------------------------------------------------------------
+Test Scenario:
+--------------
+It is an idea of what we are going to test.
+
+Test Case:
+----------
+It is an idea of how we are going to test.
+
+Test Data:
+----------
+The actual input which we are going to use in the application for testing.
+
+Defect:
+---------
+When the expected and actual is not matching, then it is a defect.
+
+Bug:
+-----
+When the tester raise a defect to developer then it is called as bug.

@@ -1,0 +1,59 @@
+Why we go for Manual Testing?
+------------------------------
+1. Human eye captures more defects
+2. Everything cannot be automated like Captcha, Image, Animation, Video, etc
+3. Manual testers are strong in Domain knowledge
+
+Software Testing:
+------------------
+1. Functional Testing
+2. Non Functional Testing
+
+1.Functional Testing:
+----------------------
+Checking the functionalities of the application.
+
+---> Front End:
+	---> Manual Testing (Testing the functionalities by manual)
+	---> Automation Testing (Testing the functionalities by using tools/programming languages)
+---> Back End:
+	---> Webservices Testing (Validating request and response) - API Testing
+
+2.Non-Functional Testing:
+-------------------------
+Checking the non-functional aspects of the application.
+
+Types of Non-Functional Testing:	
+---------------------------------
+---> Performance Testing:
+	--->Response Time
+        	--->Adding virtual number of users accessing the application simultaneously to check the performance of the application	
+	--->Load/Stress
+		--->Process of adding load and making the application stress is called Load/Stress Testing
+	--->Tools Used
+		--->J-Meter 	 ---> Open Source Tool
+		--->Load Runner	 ---> Paid Version
+
+---> Usability Testing:
+	--->To check how good the application is user friendly
+
+---> Accessibility Testing: 
+	--->To check how good the application is accessible to different users(physically challenged peoples)
+	--->Tools Used: JAWS and NVDA
+
+--->Security Testing:
+	--->To test how secure the application is
+
+Principles of Software Testing:
+--------------------------------
+1. Testing shows the presence of defect not their absence.
+2. Exhastive testing is not possible. (Testing all the combinations of valid or invalid data is impossible)
+3. Early testing saves time and money.
+4. Defects cluster together (Concentrating the module even it is small which has more defects and testing it thoroughly will raise of more defect)
+5. Beware of pesticide paradox (Aware of which area the testing is required, Don't Spend time in testing the module which doesn't have any defects)
+6. Testing is context dependent (Whatever the application we are going to test, we have to act based on the domain as what the application related to)
+7. Absence of error is a fallacy (Instead of telling bug free, make sure the environments are matching with the client reqirement)
+
+
+
+

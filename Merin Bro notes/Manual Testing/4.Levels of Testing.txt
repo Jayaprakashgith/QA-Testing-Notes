@@ -1,0 +1,47 @@
+Levels of Testing:
+------------------
+--> The testing done at various levels and by whom it is done is called Levels of Testing.
+--> There are 4 levels of testing. If theses 4 levels of testing is completed only, we can say the application is ready for release.
+
+1.Unit Testing - Developers
+2.Integration Testing - Testers with help of developers
+3.System Testing - Testers
+4.Acceptance Testing - Client
+
+White Box Testing Technique:
+----------------------------
+Testing done based on applications internal coding knowledge. It is done by developers. 
+White Box Testing is also called as Glass Box, Clear Box, and Structural Testing. 
+
+Black Box Testing Technique:
+----------------------------
+Testing done without looking at the internal coding knowledge. It is done by testers.
+
+1.Unit Testing:
+---------------
+--> Testing an individual module in an application
+--> Done by Developers 
+--> Test based on White Box Testing Technique.
+
+2.Integration Testing:
+----------------------
+--> Combining or merging two modules
+--> Done by Testers with the help of developers
+--> Test based on Black Box Testing Techniques
+--> Top-down Approach - Higher level combinations of units
+--> Bottom-up Approach - Lower level combinations of units
+--> Big Bang Approach - Combining all combination of units.
+
+3.System Testing:
+-----------------
+--> Complete Application Testing
+--> Done by Testers
+--> Test based on Black Box Testing Technique
+--> Types of System Testing: Functional Testing and Non Functional Testing
+--> If theses 2 types of testing is completed only, we can say system testing is completed.
+
+4.Acceptance Testing:
+---------------------
+--> Satisfying client requirement
+--> Done by client side
+--> To get approval from client.

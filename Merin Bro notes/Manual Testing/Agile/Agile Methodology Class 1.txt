@@ -1,0 +1,75 @@
+SDLC Methodologies:
+--------------------
+1.WaterFall Model
+2.V-Model Of Testing
+3.Iterative Model
+4.Agile Model
+
+1.Waterfall Model:
+------------------
+-->Simple and easy to understand and use.
+-->Each phase has specific deliverables and review processes.
+-->Not suitable for projects where requirements are at a risk of changing.
+-->Not a good model for complex and long projects.
+-->Mostly Developers and testers will not have direct contact.
+
+2.V-Model:
+----------
+The V-model is an SDLC model where execution of processes happens in a sequential manner in a V-shape. It is also known as Verification and Validation model.
+
+3.Iterative Model:
+------------------
+We are going to iterate each functionality in to each part and design,develop and test and deploy.
+
+4.Agile Model:
+--------------
+-->Agile methodology is a practice that promotes continuous iteration of development and testing. Here both development and testing activities are concurrent unlike the Waterfall model.
+
+[Note: Framework - Scrum and Kanban] 
+
+Scrum:
+------
+-->Roles
+-->Artifacts
+-->Cermonies
+
+Roles:
+------
+Product Owner --> Product Owner defines requirements of the product, prioritize according to the market value & profitability and decides release date.
+Scrum Master --> Scrum Master manages the team, responsible for setting up the team, scrum meeting invite.
+Scrum Team --> Developers and Testers.
+
+Artifacts:
+---------- 
+Userstory --> Short explanation of requirements.
+
+Acceptance Criteria --> Detailed explanation of requirements. Each userstory have an acceptance criteria
+
+Product Backlog	--> Collection of Userstories captured for a scrum project managed by Product Owner.
+
+Sprint Backlog	--> No of userstories taken for a patricular sprint.
+
+Sprint	--> Set period of time to complete the user stories usually 2 to 3 weeks of time.	
+
+BurnUp and Burndown Chart --> Burn-up chart illustrates the amount of completed work in a project and the burn-down chart illustrates the amount of work remained to complete a project. 
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+

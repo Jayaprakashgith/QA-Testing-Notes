@@ -1,0 +1,45 @@
+SDLC Overview:
+--------------
+Software Development Life Cycle (SDLC) is a process used by the software industry to design, develop and test high quality software.
+
+Phases of SDLC:
+---------------
+
+1.Requirement gathering and analysis
+2.Design
+3.Development 
+4.Testing---->>STLC
+5.Deployment
+6.Operation and Maintanenece
+
+Software Development Life Cycle:
+--------------------------------
+1.Requirement gathering and analysis:
+-------------------------------------
+--> A Contract will be signed between client and marketing team
+--> Business Analyst(BA) will get the requirement from the client and prepare a document called Business Requirement Document(BRD) or Software Requirements Specification(SRS) Document
+
+2.Design:
+---------
+--> Then a document will be prepared called Design Specification Document, which will give details about how the front and back end could interact.
+
+3.Development: (Dev Environment)
+--------------------------------
+--> Then Developers will develop the software by the use of any coding language and they will do a test called Unit Testing.
+
+4.Testing:(QA or Testing Environment)
+-------------------------------------
+--> Once developer coded for the functionality of the software then they will move their code or build into testing enviornment. Once developer moved the code into testing phase, testers will test the applications as per the flow STLC(Software Testing Life Cycle).
+
+5.Deployment:(Live Environment)
+--------------------------------
+--> Once a program has passed the testing phase, it is ready for deployment.
+--> Here the application will be deployed in the live environment.
+--> Typically it happens at Non Peak Hours.
+
+6.Opreation and Maintenance:
+----------------------------
+--> Maintenance of software can include software upgrades, repairs and fixes of the software if it breaks.
+
+
+

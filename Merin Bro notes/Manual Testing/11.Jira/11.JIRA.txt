@@ -1,0 +1,32 @@
+Defect Management Tool/Test Management Tool: JIRA
+--------------------------------------------------
+--> It is used for issue tracking and project management.
+
+How to open an account in JIRA:
+-------------------------------
+--> Type "JIRA account create" in Google,
+--> Click on "Free - Jira Software | Atlassian",
+--> Click Next
+--> Create an account - sign up with email
+--> Verify with email
+--> Give site name
+--> Select Scrum and click use template
+--> Select Project type as Company managed
+--> Enter Project Name
+
+How to Create an Bug:
+---------------------
+--> Click Create Button
+--> Select Bug in Issue Type
+--> Give Summary - Defect Name
+--> Give Detailed explanation of the defect in Description
+	--> Environment: 
+	--> Browser/Platform: 
+	--> Build Number:
+	--> Steps to reproduce: 
+	--> Actual results:
+	--> Expected results:
+	--> Priority:
+	--> Screenshots:
+	--> Link with userstory
+	--> Asssignee:

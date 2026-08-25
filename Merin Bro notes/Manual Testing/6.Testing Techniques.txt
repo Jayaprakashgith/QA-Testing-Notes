@@ -1,0 +1,51 @@
+Testing Techniques:
+-------------------
+1.Equivalence case partitioning Technique
+2.Decision Table Technique
+3.State Transition Technique
+4.Boundary Value Analysis
+5.Error Guessing Technique
+6.Adhoc Testing
+
+Equivalence case partitioning Technique:
+----------------------------------------
+-->In equivalence case partitioning technique, the test cases are eqaully divided based upon positive and negative inputs.
+	    -->Example: Consider that we have to select an age between 18-56, 
+	 	    	Here the Valid inputs are 18-56 and the invalid inputs are <=17 and =>57.
+	 	    	Here we have one valid and two invalid test cases. 
+
+Decision Table Technique:
+-------------------------
+-->In Decision table technique, we deal with combinations of inputs.
+-->To identify the test cases with decision table, we consider conditions and actions.
+-->We take conditions as inputs and actions as outputs.
+	-->Example: Login validation - Allow user to login only when both the username and password is correct.
+	  	   		Conditions 1: Enter valid username and valid password and Click Login.
+	  	   		Actions    1: Display home page and Execute.
+
+		   		Conditions 2: Enter invalid username and valid password and Click Login.
+	  	   		Actions    2: Display Error message as invalid username.
+	  
+State Transition Technique:
+---------------------------
+-->Using state transition testing, we pick test cases from an application where we need to test different system transitions.
+-->We can apply this when an application gives a different output for the same input,depending on what has happened in the earlier state.
+	-->Example: Login with invalid username and password three times keeps the account page blocked until change password.
+
+Boundary Value Analysis:
+------------------------
+-->Boundary value analysis is based on testing the boundary values of valid and invalid partitions.
+-->Every partition has its maximum and minimum valuesand these maximum and minimum values are the boundary values of a partition.
+	-->Example: If we want to enter an amount between 100 to 1000.
+                    Here we check based on boundaries for 100, we take 99,101 and for 1000, we take 999,1001.
+
+Error Guessing Technique:
+-------------------------
+-->Error Guessing is used to find bugs in software application based on testers prior experience. 
+-->Here we won't follow any specific rules.
+
+Adhoc Testing:
+--------------
+-->Ad-hoc testing is an informal testing type.  
+-->This testing is primarily performed if the knowledge of testers in the application under test is very high. 
+

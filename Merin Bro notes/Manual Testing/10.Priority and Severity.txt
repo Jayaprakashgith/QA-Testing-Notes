@@ -1,0 +1,21 @@
+Priority and Severity:
+----------------------
+Severity:(Testers) - High, Medium and Low
+------------------
+Explaining how severe the defect is going to impact the application.
+
+Priority:(Developers) - High, Medium and Low
+---------------------
+How soon the defect is going to be fixed
+
+High Severity, High Prioirty - Login, Search, Payment
+High Severiy, Low Priority - Links, websites
+Low Severity, Low Priority - Content validation
+Low Severity, High Priority - Logo, colours
+
+In real time, due to conflicts in priority and severity, severity concepts will not be there, only priority will be there, that priority will be given by testers itself.
+
+
+
+
+

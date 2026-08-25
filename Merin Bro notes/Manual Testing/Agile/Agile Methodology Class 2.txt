@@ -1,0 +1,55 @@
+Agile Ceremonies:
+-----------------
+1.Sprint Groooming:
+-------------------
+	-->Attended by - Product Owner, Scrum Master and Scrum Team.
+	-->Meeting Duration - 1 hour.
+	-->Here the product owner will have already prioritized product backlog.
+	-->Product owner will take some set of userstories from Product backlog and explain.
+	-->We need to understand the user stories.
+	
+
+2.Sprint Planning:
+------------------
+	-->Attended by - Scrum Master and Scrum Team.
+	-->Meeting Duration - 1 to 3 hours.
+	-->Userstory points will be given by Developers based on complexity by using Pocker card technique which is based on Fibonacci series.
+	-->Selected userstories will be moved from Product backlog to Sprint backlog.
+		       
+---------|BeforeSprint|-------------------------------------------------------------------
+
+
+3.Daily Scrum Meeting (or) Daily Stand up calls:
+------------------------------------------------
+	-->Attended by - Scrum Master and Scrum Team.
+	-->Meeting Duration - 15 minutes.
+	-->Stand-up is designed to quickly inform everyone of what's going on across the team.
+	-->It's not a detailed status meeting. Following will be discussed in that meeting
+		--> What did I complete yesterday?
+		--> What will I work on today?
+		--> Am I blocked by anything?
+
+---------|After Sprint|---------------------------------------------------------------------
+
+	
+4.Sprint Review Meeting:
+------------------------
+	-->Attended by - Product Owner, Scrum Master and Scrum Team.
+	-->Meeting Duration - 1 hour.
+	-->Team will give demo of current sprint completed stories to product owner.
+	-->Non completed stories will be spilled over to next sprint.
+											 
+5.Sprint Retrospective Meeting:
+----------------------------------------
+	-->Attended by - Scrum Master and Scrum Team.
+	-->Meeting Duration - 1 hour.
+	-->Team will discuss the below
+		--> What went right?
+		--> What went wrong?
+		--> What can be done better for next sprint?
+
+
+
+
+
+	

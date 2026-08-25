@@ -1,0 +1,62 @@
+Other Important Questions:
+--------------------------
+
+1.Outsprint or n-1 Sprint:
+--------------------------
+-->To automate user stories for the previous sprint, is called out-sprint automation.
+-->Consider there were few User stories from previous Sprint which could be automated. 
+-->We will automate it in current sprint, which is called as n-1 or outsprint automation.
+
+2.Insprint in Agile:
+--------------------
+-->To develop and automate user stories in the same sprint, is called in-sprint automation.
+-->Consider there were few user stories in a sprint which could be automated then, we will be writing skeleton scripts untill the developer develop the application. 
+-->Once the build is delivered to testing team, after that we will execute the scripts.
+
+3.Velocity:
+-------------
+-->Total Number of user story points consider in a particular sprint (We can say 40 Points)
+
+4.Risk Based Testing:
+---------------------
+-->Identifying the functionalities which seems to cause failures to the application and then testing those functionalities.
+
+5.Bug Leakage:
+---------------
+-->Bug which is missed by the testing team while testing and if it is found by the end user or customer in Live Environment.
+
+6.Bug Release:
+--------------
+-->Releasing the application to the Live Environment with the known bugs then we call it as Bug Release. 
+
+7.Defect Age:
+-------------
+-->It is the time interval between date of defect detection and date of defect closure. 
+-->Defect Age = Date of defect closure   Date of defect detection.
+
+8.HotFix:
+---------
+-->A bug which needs to handle as more than high priority bug and needs to be fix it immediately.
+
+9.RTM:
+------
+-->Requirements Traceability Matrix (RTM) is used to trace the requirements are done by the testing side by matching the requirement with test cases.
+
+10.Test Strategy:
+------------------
+-->Documents like Test Plan are prepared by keeping this document as a base.
+-->It is done by project manager.
+-->It is a high-level document which captures the approach on how we go about testing the product and achieve the goals.
+
+11.Exploratory Testing:
+------------------------
+-->Usually, this process will be carried out by domain experts. 
+-->They perform testing just by exploring the functionalities of the application without having the knowledge of the requirements. 
+
+
+
+
+
+
+
+

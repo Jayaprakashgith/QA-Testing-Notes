@@ -1,0 +1,53 @@
+Different Types of Testing:
+---------------------------
+Positive Testing:
+-----------------
+It is to determine what system supposed to do. It helps to check whether the application is justifying the requirements or not.
+
+Negative Testing:
+-----------------
+It is to determine what system not supposed to do. It helps to find the defects from the software.
+
+Formal Testing:
+---------------
+It is a process where the testers test the application by having pre-planned procedures and proper documentation.
+
+Informal Testing:
+-----------------
+It is a process where the testers test the application without having any pre-planned procedures and proper documentation.
+
+Monkey Testing:
+---------------
+Perform abnormal action on the application in order to verify the stability of the application.
+
+ReTesting:
+----------
+Once the developer fix the bug, we need to test again whether the bug is fixed or not.
+
+Smoke Testing:
+--------------
+Smoke Testing is done to make sure if the build we received from the development team is testable or not. It is also called as Day 0 check. It helps not to waste the testing time to simply testing the whole application when the key features doesn't work.
+
+Regression Testing:
+-------------------
+It is done to make sure the existing functionalities of the application is not impacted whenever any new functionalities is added to the application.
+
+Sanity Testing:
+---------------
+Sanity Testing is done during the release phase to check the main functionalities of the application without going deeper. It is also called as a subset of Regression testing. At times due to release time constraints, regression testing can't be done to the build, in that case sanity testing does that part by checking main functionalities.
+
+Beta Testing:
+-------------
+Beta testing is done by a limited number of end users before delivery. 
+
+Live Environment Testing:
+-------------------------
+Live Environment testing the application in live environment (i.e) After Release.
+
+
+
+
+
+
+
+
