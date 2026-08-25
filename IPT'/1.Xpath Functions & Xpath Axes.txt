@@ -1,0 +1,125 @@
+1.Xpath Functions & Xpath Axes
+------------------------------
+XML Path
+
+Why we go for xpath?
+--------------------
+if id,name & class is not present
+To validate locator
+
+Absolute xpath
+--------------
+	/html/body/div/div/div/div/div/div/div[2]/div/div/form/div/div/input
+
+Xpath Functions
+---------------
+1.attribute xpath
+------------------
+	//tagName[@attributeName='attValue']
+Ex:
+---
+	//input[@type='text']
+
+2.contains attribute xpath
+--------------------------
+	//tagName[contains(@attName,'partialAttValue')]
+Ex:
+---
+	//input[contains(@placeholder,'Email address')]
+
+3.text xpath
+------------
+	//tagName[text()='textValue']
+Ex:
+---
+	//button[text()='Log in']
+
+4.contains text xpath
+---------------------
+	//tagName[contains(text(),'partialTextValue')]
+Ex:
+---
+	//button[contains(text(),'Log')]
+
+5.xpath with unknown tagName
+----------------------------
+	//*[@attributeName='attValue']
+
+* -->unknown tagName
+Ex:
+---
+	//*[contains(text(),'Log')]
+
+6.xpath with multiple attributes
+--------------------------------
+	//tagName[@attName='attValue'][@attName='attValue'][@attName='attValue']
+Ex:
+---
+	//input[@type='text'][@id='email'][@name='email']
+
+7.startswith text xpath
+-----------------------
+	//tagName[starts-with(text(),'startingTextVal')]
+Ex:
+---
+	//button[starts-with(text(),'Log')]
+
+8.startswith attribute xpath
+----------------------------
+	//tagName[starts-with(@attributeName,'startingAttVal')]
+Ex:
+---
+	//input[starts-with(@placeholder,'Email')]
+
+9.xpath with AND condition
+--------------------------
+	//tagName[@attributeName='attValue' and @attributeName='attValue']
+Ex:
+---
+	//input[@type='text' and @name='email']
+
+10.xpath with OR condition
+--------------------------
+	//tagName[@attributeName='attValue' or @attributeName='attValue']
+Ex:
+---
+	//input[@type='text' or @name='mail']
+
+Xpath Axes:
+-----------
+Parent Xpath
+------------
+	//knownxpath//parent::element
+Ex:
+---
+	//input[@type='text']//parent::div
+
+Ancestor Xpath
+--------------
+	//knownxpath//ancestor::element
+Ex:
+---
+	//input[@type='text']//ancestor::div[@id='content']
+
+Child Xpath
+-----------
+	//knownxpath//child::element
+Ex:
+---
+	//form[@class='_9vtf']//child::input
+
+Sibling Xpath
+-------------
+Preceding-Sibling
+-----------------
+	//knownxpath//preceding-sibling::element
+Ex:
+---
+	//input[@name='lsd']//preceding-sibling::input
+
+Following-Sibling
+-----------------
+	//knownxpath//following-sibling::element
+Ex:
+---
+	//input[@name='lsd']//following-sibling::input

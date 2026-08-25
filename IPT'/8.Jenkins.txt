@@ -1,0 +1,109 @@
+Jenkins 
+-------
+	it is an open-source automation server that is widely used for automating various tasks related to software development, primarily in the context of continuous integration and continuous delivery (CI/CD)
+
+Automation Server
+=================
+	Jenkins serves as an automation server, enabling the automation of repetitive tasks involved in building, testing, and deploying software. 
+
+Continuous Integration (CI)
+===========================
+	Jenkins is most commonly associated with CI, where it automatically builds and tests code changes as they are committed to version control repositories 
+
+Continuous Delivery/Continuous Deployment (CD): 
+===============================================
+	Jenkins can be used for CD as well, automating the deployment and delivery of software to various environments, such as staging and production
+
+Integration
+===========
+	Jenkins can integrate with a wide range of tools, including version control systems (e.g., Git), build tools (e.g.Maven, Gradle), testing frameworks, deployment tools.
+
+Monitoring and Reporting
+========================
+	Jenkins provides dashboards and reporting tools to monitor the status and results of builds and deployments. It can also send notifications when builds fail or succeed
+
+
+Steps:
+------
+	1.Download jenkins war file 
+	----------------------------
+		google search --->jenkins war file download --->Stable releases (Weekly) --->download jenkins war file
+
+	2.Run jenkins war file in cmd prompt
+	-------------------------------------
+		java -jar jenkins.war --httpPort=8082
+	
+	3.Open the sepcified port number in browser
+
+	4.Unlock the jenkins using password
+
+	5.Install the suggested plugin and click continue
+
+	6.Manage Plugin --->Install Plugin --->Available --->install Maven Integration/Cucumber Reports
+
+	7.Configure System
+	------------------
+		Goto  Global properties ---->Environment variables
+			Name:JAVA_HOME
+			Value:C:\Program Files\Java\jdk-11
+
+			Name:MAVEN_HOME
+			Value:D:\Software\apache-maven-3.8.4-bin\apache-maven-3.8.4
+
+	8.Global Tool Configuration
+	-----------------------------
+			Name:Default
+			Value:C:\Program Files\Git\bin\git.exe
+
+Project Creation
+=================
+
+	1.New Item ---->Create Freestyle project in jenkins
+	2.Check Hithub project -->mention github repository url
+	3.Build Steps --->Maven (Clean,Install,Test)
+	4.Post Build Action --->Cucumber Reports 
+			(Or)
+================================================================================================================================================
+Project Creation
+=================
+	1. Create free Style Project in jenkins
+	2. Add Description for the Project 
+	3. Mention the project location
+
+GitHub option in jenkins
+--------------------------
+Select GitHub Project ----> Repository URL
+
+Local
+-----
+Advance --> Use Custom Workspace-->Project Directory 
+ 
+	4. Build steps -->Add build step -->invoke top level maven targets
+	5. Post build action --> Cucumber Reports
+
+=====================================================================================================================================================
+
+Build Periodically
+==================
+
+CRON Expression
+===============
+
+* * * * *
+
+| | | | |
+| | | | +---- Day of the week (0 - 7) 
+| | | +------ Month (1 - 12)
+| | +-------- Day of the month (1 - 31)
+| +---------- Hour (0 - 23)
++------------ Minute (0 - 59)
+
+
+How to run the scripts in Jenkins(pytest):
+------------------------------------------
+1.Click new items
+2.Create Freestyle project
+3.in advanced option click on custom workspace(General)
+4.Give local directry and display name
+5.Click on add build step and Execute windows batch command
+6.save and click on build now

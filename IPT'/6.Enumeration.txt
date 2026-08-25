@@ -1,0 +1,46 @@
+1.Enumeration
+==============
+	Legacy Interface (introduced in JDK 1.0)
+	Used to iterate over legacy collections like Vector and Hashtable
+
+Methods:
+--------
+	hasMoreElements()
+	nextElement()
+
+Limitations
+-----------
+	Read-only traversal (can't remove elements)
+	Forward only traversal
+
+2.Iterator
+===========
+	-Introduced in Java 1.2 as part of the Java Collections Framework
+	-Can be used with most collections
+
+Methods:
+--------
+	hasNext()
+	next()
+	remove()
+
+	Can remove elements during iteration
+	Forward only traversal
+
+3. ListIterator
+=================
+	Subinterface of Iterator
+	Only for List implementations (like ArrayList, LinkedList)
+	Bidirectional traversal (forward and backward)
+
+Methods:
+--------
+	hasNext()
+	next()	
+	hasPrevious()
+	previous()
+	remove()
+
+	Can iterate forward and backward
+	Can modify list (remove)	
+	Allows fine control over iteration

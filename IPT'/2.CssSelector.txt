@@ -1,0 +1,100 @@
+Locators:
+============
+	id
+	name
+	className
+	xpath
+	tagName
+	linkText
+	partialLinkText
+	cssSelector
+
+Css Selector:
+==============
+	-Fastest one when compare to xpath due to simple syntax
+	-Traverse only in forward direction (Parent ----> Child)
+
+1.id selector:
+--------------
+	#idAttValue
+Ex:
+---
+	#email
+
+2.tagName with id selector
+--------------------------
+	tagName#idAttValue
+Ex:
+---
+	input#email
+
+3.tagName with id & attribute selector
+--------------------------------------
+	tagName#idAttValue[attName=attValue]
+Ex:
+---
+	input#email[type=text]
+
+4.class selector
+----------------
+	.classAttValue
+Ex:
+---
+	.inputtext._55r1._6luy
+
+5.tagName with class selector
+-----------------------------
+	tagName.classAttValue
+Ex:
+---
+	input.inputtext._55r1._6luy
+
+6.tagName with class & attribute selector
+-----------------------------------------
+	tagName.classAttValue[attName=attValue]
+Ex:
+---
+	input.inputtext._55r1._6luy[type=password]
+
+7.attribute selector
+--------------------
+	tagName[attributeName=attValue]
+Ex:
+---
+	input[type=password]
+
+8.css selector with multiple attributes
+---------------------------------------
+	tagName[attributeName=attValue][attributeName=attValue][attributeName=attValue]...
+Ex:
+---
+	input[type=password][id=pass][name=pass]
+
+9.startswith 
+------------
+	tagName[attName^=startingAttValue]
+Ex:
+---
+	input[type^=pa]
+
+10.endswith
+-----------
+	tagName[attName$=endingAttValue]
+Ex:
+---	
+	input[type$=rd]
+
+11.substring (or) contains
+--------------------------
+	tagName[attName*=partialAttValue]
+Ex:
+---
+	input[type*=rd]
+link
+----
+    a 
+
+<a>link text</a>
+
+	linkText
+	partialLinkText

@@ -1,0 +1,143 @@
+Realtime OOPS
+=============
+OOPS 
+----
+	Object Oriented Programming Structure 
+
+	It is a method of implementation in which program is organized as collection class,methods & objects
+	In my project we have implemented oops concepts in many places.
+
+
+priciples 
+=========
+	Class
+	Methods
+	Objects
+	Inheritance
+	Polymorphism
+	Abstraction
+	Encapsulation
+
+
+Class
+=====
+	Collection of methods & object
+
+In my project we used many predefined classes
+	ChromeDriver
+	FirefoxDriver
+	InternetExplorerDriver
+	EdgeDriver
+	Actions
+	Select
+	WebDriverWait
+
+Methods:
+========
+	Set of actions to be performed 
+
+Inside method we used to write business logics
+	getCurrentUrl()
+	getTitle()
+	findElements()
+	findElement()
+	getWindowHandle()
+	getWindowHandles()
+	sendKeys()
+	click()
+	getText()
+
+Object
+======
+	Runtime memory allocation
+
+using object we can call method from class
+	ClassName objectName = new ClassName();
+
+Inheritance:
+============
+	Process of accessing one class properties from another class using extends keyword
+
+advantages:
+===========
+	-ReUsableCode purpose
+	-Memory wastage is low
+
+	In our project we are maintaining all reusable methods in a seperate class(BaseClass/Utility/Reusable) and wherever it's required simply we use extends keyword and accessing the methods of BaseClass into other classes
+
+Polymorphism:
+=============
+	Executing the methods in morethan one form (or) completing the same task in many ways
+types
+--------
+	method overloading
+	method overriding
+
+Method overloading:
+--------------------
+	In a same class executing the same method by passing different set of arguments
+
+	arguments depends on data type
+	arguments depends on data type count
+	arguments depends on data type order
+
+	driver.switchTo().frame(String idOrName)
+	driver.switchTo().frame(int index)
+	driver.switchTo().frame(WebElement refName)
+
+	sendKeys("Hello")
+	sendKeys("Hello",Keys.ENTER)
+
+Method Overriding:
+-------------------
+
+	When we not satisfied with parent/super class method business logics.
+
+we can create a same method in child class and changing the business logic of method.
+	get()
+	getTitle()
+	close()
+	quit()
+
+
+Abstraction:
+============
+	Hiding the implementation details of method (or) business logics of the method
+
+Types
+-----
+	partial abstraction(abstract class)
+	fully abstraction(interface)
+
+
+abstract class
+--------------
+	it support both abstract method & non abstract methods
+	we cannot create object
+	using extends keyword we are accessing methods from abstract class By (predefined abstract class)
+
+interface
+----------
+	it support only abstract method
+	we cannot create object
+	using implements keword we are accessing the methods from interface
+
+	WebDriver
+	WebElement
+	JavaScriptExecutor
+	TakesScreenshot
+	Alert
+	Wait
+	Navigation
+	Workbook
+
+Encapsulation:
+==============
+	Wraps the data and code acting on a data binding together in a single unit
+	Data hiding process
+
+POJO (Plain Old Java Object)
+-------------------------------
+	it contains only private variables,getters & setters
+
+POM
