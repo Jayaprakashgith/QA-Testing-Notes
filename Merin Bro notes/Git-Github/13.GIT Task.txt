@@ -1,0 +1,87 @@
+1st person:
+------------
+-->Login in GITHUB 
+-->Create a new repository
+-->Local-->Select any project--> Right click--> open with system explorer
+-->Go inside the project and give gitbash
+-->Configure your GIT - First and only one time
+	git config --global user.email merin@gmail.com
+	git config --global user.name Merin
+-->Intialize your project - First and only one time
+	git init
+-->git status --> to check what are the files you changed
+-->git add . --> to add all your changed files
+-->git commit -m "message"  --> commit your local with repository
+-->git remote add origin repository url - only one time --> declare the url where you need to 
+push
+-->git push -u origin master  --> push your code to repository
+-->give access to others
+
+2nd person: (Test1)
+-----------
+-->Create a new folder in local
+-->Give git bash
+-->git Clone repository url
+-->Create a new branch Greens
+-->Import the project you cloned
+-->Select the project--> Right click--> open with system explorer
+-->Go inside the project and give gitbash
+-->git checkout -b Test1
+-->scripting
+-->Select the project--> Right click--> open with system explorer
+-->Go inside the project and give gitbash
+-->git status --> to check what are the files you changed
+-->git add . --> to add all your changed files
+-->git commit -m "message"  --> commit your local with repository
+-->git push -u origin Test1  --> push your code to your branch
+
+3rd person: (Test2)
+-----------
+-->Create a new folder in local
+-->Give git bash
+-->git Clone repository url
+-->Create a new branch Test2
+-->Import the project you cloned
+-->Select the project--> Right click--> open with system explorer
+-->Go inside the project and give gitbash
+-->git checkout -b Test2
+-->scripting
+
+2nd person: (Test1)
+-----------
+-->give pull request
+-->1st person/Lead will review and merge
+
+3rd person: (Test2)
+-----------
+-->Select the project--> Right click--> open with system explorer
+-->Go inside the project and give gitbash
+-->Intialize your project - First and only one time
+	git init
+-->git status --> to check what are the files you changed
+-->git add . --> to add all your changed files
+-->git commit -m "message"  --> commit your local with repository
+-->git pull origin master --> to get the update code from the master
+-->conflicts will occur in form of header and tailer
+-->Resolve conflicts
+-->git status --> to check what are the files you changed
+-->git add . --> to add all your changed files
+-->git commit -m "message"  --> commit your local with repository
+-->git push -u origin Test2  --> push your code to your branch
+-->give pull request
+-->1st person/Lead will review and merge
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
