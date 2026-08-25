@@ -1,0 +1,19 @@
+Encapsulation:
+===============
+    Wrapping up of data & code. Acting on data into a single unit its called Encapsulation
+(or)
+      Structure of creating folder is called Encapsulation
+
+  EX : POJO Class
+
+POJO Class: Plain Old Java Object
+===================================
+   It is a class, which contains only private variables, methods , constructor and getters and setters.
+
+Other Name : Model class or Bean class
+
+User defined List, Set , Map:
+==============================
+   setters - used to set the Input
+   getters - used to get the output
+

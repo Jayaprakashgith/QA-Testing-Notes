@@ -1,0 +1,51 @@
+Array
+=======
+        We can store  multiple values of similar data type in a single variable
+        Array is index based
+        index start from 0 to n-1
+        it is fixed size
+
+ Array Syntax
+ ------------------
+             DataType variablename[ ] = new  DataType[size];
+
+  Enhanced for loop / for each
+--------------------------------------
+          for(DataType variableName : storedvariable){
+
+          }
+    
+  Disadvantage of array
+
+              We can store only the similar datatype
+              once we fixed the size we cant modify
+              memory wastage is high
+              compile time memory allocation
+
+
+ Normal for loop                                         enhanced for loop
+----------------------		      -----------------------------
+index based                                                  value based
+apply the condition                           we cant apply any condition
+index related error 
+/index out of bounds exception            won't any error
+less efficient                                          more efficient
+
+Default value of data types
+----------------------------
+int - 0
+long -  0
+float -  0
+double - 0
+boolean - false
+string - null
+
+
+Two-Dimension Array:(2D)
+================
+syntax:
+-----
+datatype  var[][]  =new datatype[Row-size][Column-Size]
+
+One D
+ DataType variable[ ] = new  DataType[size];

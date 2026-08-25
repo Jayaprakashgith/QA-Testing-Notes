@@ -1,0 +1,51 @@
+Access specifier
+================
+	private --> Class level access specifier(It will support  only within the class)
+
+	public  --> Globle Level Access (samepackage(extends,object)+different pacakge(extends,object))
+
+	Protected -->  (samepackage(extends,object)+different pacakge(extends))
+	
+	default --> Package level access specifier(Without AccessSpecifier Within the Package we can access)
+
+Non-Access Modifiers:
+======================
+	1.abstract
+	2.static
+	3.final
+
+   class level
+   method level
+   variable level
+
+1.abstract:
+-----------
+   
+
+	class level ----->we can't able to create object
+	method level ---->we can't able write any business logics
+	variable level--->we can't able to mention abstract keyword in variable
+
+2.static:
+---------
+	class level --->we can't able to mention static in class level,but nested class is possible
+
+	method level:
+	-------------
+	        same class---->we no need to create object we can call the method directly
+
+                outside class---->we can call the method by using ClassName.methodName(),
+ 	                 if we use extends keyword we can call the static method directly
+
+variable level:
+===============
+	same class---->we no need to create object we can call the variable directly
+
+	outside class---->we can call the variable by using ClassName.variableName;,
+              if we use extends keyword we can call the variable directly
+
+3.final:
+--------
+	class level ----->we can't able to inherite the class
+	method level ---->we can't able to override the method in another class
+	variable level -->we can't able to change the value in variable

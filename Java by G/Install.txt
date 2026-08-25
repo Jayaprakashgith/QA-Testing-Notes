@@ -1,0 +1,22 @@
+jdk download 
+-----
+google -> jdk downl _> java se 21 archive download --> windows x64 
+
+instal 
+----
+right clk --> run as addd
+
+verify instal 
+---------
+cmd : java -version 
+
+
+------------------------------------------
+eclipse down
+------
+google _>ecl downlo -> 4th option 
+
+zip file
+------
+extract -> application
+

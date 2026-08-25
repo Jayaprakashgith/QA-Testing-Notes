@@ -1,0 +1,98 @@
+OOPS Concept
+ ============
+              Object Oriented Programming Structure.
+              It is a method of implementation in which program is organised as collection of class,methods & Objects.
+
+  Principles:
+  ===========
+   class
+   method
+   object                                                                            
+   inheritance
+   polymorphism
+   abstraction 
+   encapsulation
+ 
+    class:
+    ======
+         Class is the collection of objects and methods.
+
+    method:
+   =======
+          set of actions to be performed// business logics
+
+    object:
+   ======
+         it is a runtime memory allocattion 
+
+         it is used to call the methods
+
+    SYNTAX:------->for Object creation
+   -------------
+      ClassName objectName = new ClassName();
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+  Standard Notation:
+  ==============
+         1) Pascal Notation/init cap notation
+                  Each word first letter, must be in capital letter.
+                        Ex:GreensTechnologySolutionLimited.
+                 Pascal Notation used in ProjectName, ClassName
+
+         2)Camel Notation
+                 First word should be in small letter, remaining word first letter start with capital.
+                        Ex:greensTechnologySolutionLimited.                
+                 Camel Notation used in  methodName , objectName, variableName.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+    Simple Java Program:
+    ===============
+              Step1----> creation of project
+                                  File--->new------>JavaProject--->ProjectName--->Finish
+
+              Step2----> creation of package
+                              
+  
+                        src--->RightCick--->New--->Package--->(org.name)-->Finish
+                              in package contain collection (or) number of classes
+          
+                                         domain.orgname.envname.modulename --->org.tcs.test.login
+
+
+              Step3---->Creation of class
+                                   Package--->Right click--->New--->class--->(ClassName)--->Finish
+
+               Step4--->Creation of method
+                                               inside of class
+
+                                  Type method name--->ctrl+space--->Enter---->select the method
+                                   sysout--->crtl+space
+
+                Step5--->Creation of main method
+                                  main-->ctrl+space-->Enter
+
+                Step6--->Creation of object
+    
+                                   ClassName objectName = new ClassName();
+
+                        object will always under the main method
+
+               Step7---->Calling the method
+                         SYNTAX: objectName.methodName(); 	
+ 
+               Step8---->Right click--->  RunAs-->JavaApplication
+
+---------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+ 
+
+
+
+    
+
+

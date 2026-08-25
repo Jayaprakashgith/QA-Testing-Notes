@@ -1,0 +1,35 @@
+Types of Variable 
+==================
+	Local Variable
+	Instance Variable
+	Static Variable
+
+Local Variable(method level)
+-----------------------------
+	1.Declare Inside of Method or block
+	2.It get activated when the control enter into the method or block
+	3.It get deactivated when the control exits the method
+	4.we can't able to pass any access specifier for the local variable
+	5.it does'nt take default value automatically
+	6.it stored in stack memory(temp memory)
+
+Instance Variable(Object level Variable)
+-----------------------------------------
+	1.It declare inside the class & outside the method
+	2.It get activated when the object is created
+	3.It get deactivated when the object destroy
+	4.We can declare any access specifier for the instance variable
+	5.It takes default value automatically .. no need to intialize
+	6.It stored inside the Heap memory
+
+Static Variable(Class level Variable)
+--------------------------------------
+	1.Declare inside the class & Outside of Method
+	2.It get activated when the control enter into the class
+	3.It get deactivated when the control exit the class
+	4.We can declare any access specifier for the static variable
+	5.It takes default value automatically ..no need to initilize
+	6.We can call the static variable directly  no need to create object in same class
+	  In different class We can call the variable by ClassName.VariableName...
+	  using extends keyword We can call the variable directly in different class
+

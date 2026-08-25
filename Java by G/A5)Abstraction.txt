@@ -1,0 +1,34 @@
+ 
+  Abstraction
+--------------
+   Hiding the implementation details or method business logic details. 
+ 
+ Types of abstraction:
+-------------------------
+         Abstract Class (Partial abstaction)
+         Interface (Fully abstraction)
+
+ Partial abstaction (abstract class)  
+  -----------------------------------  
+        contains both abstract and non abstract methods
+	we can't create object
+	contains keywords Extends
+
+abstract ----> the method should not contain any business logic.
+
+         non abstract ---->  the method which contain business logic.
+
+   syntax for abstract Method
+  ============================
+	public abstract void methodName();
+
+Fully abstraction (Interface)
+  --------------------------------
+     contain only the  abstract methods
+     we can't create object 
+     contains keywords implements.
+   
+
+
+         
+

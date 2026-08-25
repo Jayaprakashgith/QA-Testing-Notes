@@ -1,0 +1,45 @@
+Data Types
+==========
+It specify the type & size of variable.
+
+Variable
+========
+Variable is used to store the values. 
+
+
+Data type	                            Size(Byte)	                            		
+
+byte	2		1			
+short	4		2			
+int	9		4			
+long        19		8			
+
+float        .0000007      	4			
+double     .00000015		8			
+
+char           'A'		-			
+String       "Greens"		-			
+
+boolean(true/false)	-			
+        
+Range Calculating formula
+==========================
+
+1 byte = 8 bits
+byte = -(2^n-1) to ((2^n-1)-1) 
+-128 to 127 
+
+Wrapper Class
+=============
+Classes of data type is called Wrapper Class.
+
+Syntax of Declaring Varible
+===========================
+DataType variableName = Values;
+
+eg:
+
+short empId=1234;
+Long phNo = 9080088644l;
+float sal = 567.99997f;
+

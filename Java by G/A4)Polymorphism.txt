@@ -1,0 +1,47 @@
+    
+ Polymorphism
+ ---------------------
+                  Executing method in more than one form or as completing the same task in many ways.
+                         Poly--> many
+                        morphism--->forms
+
+ 1) Method overloading (compiletime polymorphism / static binding / static polymorphism)
+          
+	same class
+	same method                                         
+	different arguments/parameters
+   
+         Arguments depends on datatype
+         Arguments depends on datatype count
+         Arguments depends on datatype order 
+
+ 2) Method overriding (runtime polymorphism / dynamic binding / dynamic polymorphism)
+
+               same method
+               same arguments
+               different class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

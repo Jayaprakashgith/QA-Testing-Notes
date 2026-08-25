@@ -1,0 +1,211 @@
+Control Statement
+===============
+         Control the flow of execution
+
+  1)Conditional Statement
+ 	If, If else, Nested if  
+
+  2)Looping Statement
+       	while, do while, for, nested for
+  
+  3)Jumping Statement
+	Break, Continue, System.exit(0)
+
+
+   Conditional Statement
+-------------------------------
+  Depends on given condition the statement will be executed..
+    if
+    if else
+    lader if / nested if 
+
+
+   Operators
+================
+	= ---> Assignment Operator
+	== ----> Comparision Operator(ex a=5, a==5)to check the value equal or not
+	> ------> Greater than
+	< ------> Less than
+	>= -----> Greater than or Equal
+	<= ------> Less than or Equal 
+	!= ------> Not Equal 
+
+    
+
+  Conditional Statement
+-------------------------------
+    if 
+   ----
+            if(condition){
+                 // statement 
+
+           }
+     
+If the Given is condition true , it will execute otherwise it doesn't print anything ..  
+
+
+ifelse
+------
+              if(condition){
+                 //true block statement
+             }else{
+                 //false block statement
+             }
+
+    whether the  condition is true or flase it will executed..  
+
+
+More than one condition
+------------------------------
+we go for
+      And operator
+      Or   operator
+
+   
+  And 
+--------
+  if all the given conditon is true means it will execute the true block statement , otherwise it execute 
+  the false block statement or else block statement.
+
+
+   F --->false
+   T --->true
+
+    con1        con2                     	res
+     T	 T		T
+     T	 F		F
+     F	 T		F
+     F	 F		F
+
+
+           Bitwise And ----->&
+           Logical And ----->&&
+
+   Bitwise And(&)
+ ----------------------
+         it check the first condition, eventhrough it  is false it  check the next condition after execute  the 
+     false block statement.
+         less effective
+
+ Logical And(&&)
+-----------------------      
+           it check the first condition, if it is true then only go for next condition  to check, otherwise it directly execute the 
+      false block.
+         more effective.
+
+
+   Or operator
+ -----------------
+      if any one of the condition is true it executes the true block statement ,
+  otherwise it executes the false block statement.
+        
+
+   con1        con2             	res
+     T	 T		T
+     T	 F		T
+     F	 T		T
+     F	 F		F
+   
+   Bitwise Or ------> |
+   Logical Or-------> ||
+
+ if Lader / nested if 
+-------------------------
+   
+     if(condition){
+           
+     }elseif(condition){
+
+     }elseif(condition){
+     .
+    .
+    .
+   }else{
+
+   }
+======================================================================================================================
+
+ Looping Statement
+--------------------
+
+	Repeatedly execute the same set of statement again and again until the condition is false.
+    
+    while
+    do while
+    for
+    nested for
+
+ 
+    while
+  ----------
+        Entry check loop
+
+       while(condition){
+          //statement
+      }
+
+
+   do while
+ -------------
+         Exit check loop
+   
+    do{
+         // statement
+    }while(condition);
+
+For:
+===========
+
+for (initialization; condition; increment/decrement) {
+
+    // Block of statement
+
+}
+
+ min - max ----> increment ( i++ ) i=i+1
+==========================================
+ max - min ----->decrement ( i-- ) i=i-1
+
+    //  1   	2    4
+for (int i=0; i<=5;i++)
+{
+sysout(i);//3
+
+}
+
+Nested For:
+===========
+
+ for loop within another for loop is called nested for loop.
+				
+  for (intialization; condition; increment/drecrement){
+
+  for (intialization; condition; increment/drecrement) {
+
+   		 // Block of statement
+	}
+		 // Block of statement
+	}
+====================================================================================================
+
+ Jumping Statement
+-------------------------
+      break
+      continue
+      System.exit(0)
+
+      break -- it will terminate the particular loop
+
+      continue -- skip the particular condition and execute the remaining loop
+
+      System.exit(0)-- it will terminate the entire main program
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+File Operations
+-----------------------
+	File operation is nothing but Creating,updating and writing the content in file.
+
+File - c
+---------
+ Under the java.io package
+
+mkdir()----> Make dir
+mkdirs()---> Folder with in another folder
+createNewFile()--> to create the file(test.txt)
+canRead()----> can able to read the file or not
+canWrite()---> can able to write the file or not
+isHidden()---> check whether the file is hidden or not
+list()----> list out folder name in particular directory
+listFiles()--->list out the exact file location
+
+FilesUtil--C[ClassName.methodName]
+
+[Commonio.jar]2.4
+write()---> to write a content in file
+write(ref,"content",false)---> to overreide the content
+write(ref,"content",true)--->to concating the content
+readLines()---> read content in file
+

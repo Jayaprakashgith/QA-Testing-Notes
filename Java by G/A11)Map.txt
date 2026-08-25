@@ -1,0 +1,44 @@
+Map:I
+-----
+	Map is a Predefined Interface it is present in java.util
+	key,value pair combination  
+	key does not allow duplicates
+	values allow duplicates
+
+Types of map
+-------------
+	HashMap----Random
+	LinkedHashMap----Insertion
+	TreeMap----Ascending order
+	HashTable----------Random
+
+
+Methods of map
+--------------
+size()--->used to find out the size of Map
+put()-- to insert the values 
+get(key)-- value by using key
+values()----displaying the values only and its return type is collection. 
+keySet()----display the keys  only and its return type is set.
+remove()---->remove the values from Map
+clear() ---->used to clear the values from Map
+containsKey() ----->used to check the particular key is present or not
+containsValue()----->used to check the particular value is present or not
+getKey()----displaying the corresponding keys values.
+getValues()----displaying the corresponding values.
+entrySet()--for iterating the map and its return type is set<Entry<>>
+
+
+Difference between hashtable and hashmap
+-----------------------------------------
+hashmap:
+--------
+	*Asynchronize--->Allows users parallely
+	*key=1 null values= n null
+	*non thread safe
+
+HashTable
+---------
+	*synchronize---->Allows users one by one
+	*ignore null values in key and values.
+	*thread safe 

@@ -1,0 +1,30 @@
+Constructor
+-----------------
+	* Class Name & ConstructorName sholud be same 
+	* Constructor doesnt have any return type
+    	* Where ever create object it automatically invoked the defalut constructor
+
+
+Syntax // Special method
+----------
+Public Constructor_Name(){
+     //statement
+}
+
+Types
+--------
+	1) Non parameterized Constructor/ Default constructor
+	2) Parameterized Constructor / Arugument Based constructor
+
+Constructor Chaining
+------------------------------
+	* To call one constructor to another Constructor is called Constructor chaining
+	* Reduce object creation
+
+KeyWords
+---------
+	this() -----> to call current class constructor
+	       ----this keyword should be present in first line of constructor
+
+	super() -----> to call parent class constructor
+		----super keyword should be present in first line of constructor

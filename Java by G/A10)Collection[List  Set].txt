@@ -1,0 +1,88 @@
+disadvantage of array:
+----------------------
+1.Memory wastage very high (memory is allocated at compiletime)
+2.It only support similer data types
+
+
+Collection:Interface
+--------------------
+1.Storing multiple values of dis-similer datatypes in a single refName
+2.memory wastage is low due to memory is allocated at run time
+
+Collection:I(super interface)
+================
+  List (sub interface)
+  Set  (sub interface)
+
+List:I
+------
+   List is pre-defined interface which is present in java.util package 
+   List is an index based
+   List allows duplicate
+   List prints in insertion order    
+
+Types of List (OR) Classes of List: 
+-----------------------------------
+	1.ArrayList
+	2.LinkedList
+	3.Vector
+
+Syntax
+=======
+
+InterfaceName refName = new ClassName();
+List li = new ArrayList();
+
+
+Set:I
+-----
+	Set is predefined interface which is present in java.util package
+	Set is value based one
+	Set doesn't allow duplicate values
+	Order of Set is based on class which we implemented
+
+Types of Set (or)Classes of Set
+-------------------------------
+	HashSet--random
+	LinkedHashSet--insertion
+	TreeSet--ascending order
+
+Methods not supported in Set
+---------------------------------
+add(index,value);
+indexOf();
+lastIndexOf();
+get();
+
+
+Generics:
+---------
+support only similar datatype
+jdk 1.5 version
+<>---Generics----->inside the genrics we need to pass only wrapper class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
