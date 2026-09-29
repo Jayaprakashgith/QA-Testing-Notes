@@ -1,5 +1,22 @@
 ====================================================================================================================================================================
 							BASIC AUTOMATION
+`)Coolest automation tool?
+ANS : 
+	* Selenium	: Industry-standard for web automation; supports multiple browsers and languages. Strong community backing.
+	* Appium	: Mobile automation for Android & iOS; leverages WebDriver protocol.
+	* Cypress	: Fast, developer-friendly, great for modern web apps; built-in debugging.
+	* Playwright	: Microsoft-backed, cross-browser automation; supports parallel execution and auto-waiting.
+	* TestComplete	: Commercial tool with record/playback; covers desktop, web, and mobile.
+
+`)Type of automation testing?
+Ans  :
+	* Unit Testing		: Validates individual code modules; foundation of test pyramid.
+	* Integration Testing	: Ensures modules interact correctly; catches interface issues.
+	* Functional Testing	: Confirms features meet requirements; user-focused.
+	* Regression Testing	: Protects against breaking existing functionality after changes.
+	* Performance Testing	: Evaluates speed, scalability, and stability under load.
+	* Smoke Testing		: Quick validation of basic functionality before deeper tests.
+	* Acceptance Testing	: Final check against business needs before release.
 
 `)What Automation Testing?
 Ans :
